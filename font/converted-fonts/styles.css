@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'LTMuseum-Bold';
+  src: url(./LTMuseum-Bold.eot);
+  src: url(./LTMuseum-Bold.eot?#iefix) format('embedded-opentype'),
+       url(./LTMuseum-Bold.woff) format('woff'),
+       url(./LTMuseum-Bold.woff2) format('woff2'),
+       url(./LTMuseum-Bold.otf) format('otf'),
+       url(./LTMuseum-Bold.svg#LTMuseum-Bold) format('svg'),
+       url(./LTMuseum-Bold.ttf) format('truetype');
+}

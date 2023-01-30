@@ -1,0 +1,570 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-Bold.eot);
+    src: url(../font/LTMuseum-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../font/LTMuseum-Bold.woff) format('woff'),
+        url(../font/LTMuseum-Bold.woff2) format('woff2'),
+        url(../font/LTMuseum-Bold.otf) format('otf'),
+        url(../font/LTMuseum-Bold.svg#LTMuseum-Bold) format('svg'),
+        url(../font/LTMuseum-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-light.eot);
+    src: url(../font/LTMuseum-light.eot?#iefix) format('embedded-opentype'),
+        url(../font/LTMuseum-light.woff) format('woff'),
+        url(../font/LTMuseum-light.woff2) format('woff2'),
+        url(../font/LTMuseum-light.otf) format('otf'),
+        url(../font/LTMuseum-light.svg#LTMuseum-Bold) format('svg'),
+        url(../font/LTMuseum-light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-Reg.ttf) format('otf'),
+        url(../font/LTMuseum-Reg.woff) format('woff'),
+        url(../font/LTMuseum-Reg.woff2) format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Edensor-Free';
+    src: url(./Edensor-Free.otf) format('otf'),
+        url(./Edensor-Free.woff) format('woff'),
+        url(./Edensor-Free.woff2) format('woff2');
+}
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    min-width: 1450px;
+}
+
+/*=======header=======*/
+#header {
+    background-color: #fff;
+    opacity: 85%;
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.h_text {
+    display: flex;
+}
+
+.h_text li {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 0 45px;
+
+}
+
+.h_icon {
+    display: flex;
+
+}
+
+.h_icon li {
+    padding-left: 15px;
+}
+
+
+.h_icon li:nth-child(2) {
+    padding-left: 20px;
+}
+
+.h_text li:hover {
+    color: rgb(64, 147, 193);
+}
+
+.h_icon li:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+
+/*=======main_banner=======*/
+#main_banner h1 img{
+    width: 100%;
+}
+
+
+/*=======best========*/
+#best {
+    font-family: 'LTMuseum';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+
+
+/*=======news=======*/
+#news {
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .swiper-slide h1 {
+    padding: 10px 0;
+}
+
+.card .swiper-slide p {
+    padding-bottom: 30px;
+}
+
+.card {
+
+    padding-bottom: 50px;
+}
+
+
+.swiper-button-prev {
+    left: -50px;
+    right: auto;
+}
+
+.swiper-button-next {
+    right: -50px;
+    left: auto;
+}
+
+/*높이가 다른 슬라이드들을 세로 가운데가 맞게 해줌*/
+.card .swiper-wrapper {
+    align-items: center;
+}
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.card .swiper-slide {
+    transform: scale(0.7);
+    opacity: 0.3;
+}
+
+.card .swiper-slide-prev,
+.card .swiper-slide-next {
+    transform: scale(0.85);
+    opacity: 0.5;
+}
+
+.card .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s;
+
+
+}
+
+.card .swiper-slide .text {
+    display: none;
+}
+
+.card .swiper-slide-active .text {
+    display: block;
+}
+
+/*불릿모양. swiper-pagination-bullet-active 클래스가 현재 색상이 들어간 부분 나타냄*/
+.swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 4px;
+    background-color: rgb(188, 210, 233);
+}
+
+.text h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.text {
+    padding-top: 10px;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+
+/*=======box글씨움직이는거=======*/
+@keyframes movement {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 3567px 0px;
+        /*배경이미지 길이만큼 설정합니다!*/
+    }
+}
+
+.box {
+    width: 100%;
+    height: 66px;
+    /*배경이미지 높이로 설정*/
+    background: url(../images/shop_wave.jpg) repeat-x left top;
+    background-size: auto 66px;
+    animation: movement 20s linear infinite;
+
+}
+
+
+/*=======WOMAN=======*/
+#woman {
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+#shop{
+    background-image: url(../images/shop_back.png);
+    background-repeat: no-repeat;
+    background-position: 0 300px;
+}
+
+.woman_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.click ul {
+    display: flex;
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.click ul li {
+    border: 1px solid rgb(188, 210, 233);
+    border-radius: 20px;
+    background-color: rgb(188, 210, 233);
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
+.click ul li:nth-child(1) {
+    border: 1px solid rgb(20, 53, 72);
+    background-color: rgb(20, 53, 72);
+    color: #fff;
+}
+
+.box_inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.boder{
+    background-color: #fff;
+}
+
+.border table {
+    width: 580px;
+    background-color: #fff;
+}
+
+.box_img {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.bold {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.thin {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
+
+.border table {
+    border-collapse: collapse;
+}
+
+
+.img{
+    position: relative;
+}
+
+.opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img_text{
+    position: absolute;
+    bottom: 70px;
+    left: 40px;  
+}
+
+.img_text>a>h3{
+    border-bottom: 2px solid #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.img_text>a>p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 19px;
+    line-height: 25px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.img>a:hover>.opacity{
+    display: block;
+}
+
+.img>a:hover>.img_text{
+    display: block
+}
+
+.img_text{
+    color: #fff;
+}
+
+.border table tr td:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/*내가 메인에서 들고온거*/
+.m_text{
+    border-bottom: 2px solid #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.m_atag{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 19px;
+    line-height: 25px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.m_box1>p {
+    display: block;
+}
+
+.m_inner1:hover>.opacity1 {
+    display: block;
+    transition: all 0.5s;
+}
+
+.m_inner1{
+    position: relative;
+}
+
+.opacity1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.m_box1{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: none;
+}
+
+.m_inner1:hover>.m_box1 {
+    display: block;
+    transition: all 0.5s;
+}
+
+.box_inner{
+    position: relative;
+}
+
+.box1{
+    position: absolute;
+    top: -20px;
+    right: -90px;
+    z-index: 10;
+}
+
+
+.m_inner1 a img{
+    width: 100%;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .star1 {
+    animation: rotate 5s linear infinite;
+  }
+
+
+
+/*=======man=======*/
+.click_man ul {
+    display: flex;
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.click_man ul li {
+    border: 1px solid rgb(188, 210, 233);
+    border-radius: 20px;
+    background-color: rgb(188, 210, 233);
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
+.click_man ul li:nth-child(2) {
+    border: 1px solid rgb(20, 53, 72);
+    background-color: rgb(20, 53, 72);
+    color: #fff;
+}
+
+
+/*=======acc=======*/
+.click_acc ul {
+    display: flex;
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.click_acc ul li {
+    border: 1px solid rgb(188, 210, 233);
+    border-radius: 20px;
+    background-color: rgb(188, 210, 233);
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
+.click_acc ul li:nth-child(3) {
+    border: 1px solid rgb(20, 53, 72);
+    background-color: rgb(20, 53, 72);
+    color: #fff;
+}
+
+
+/*=======footer=======*/
+#footer {
+    background-color: rgb(205, 219, 233);
+    margin-top: 200px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.sns p:nth-child(1) {
+    padding-bottom: 20px;
+}
+
+.f_text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+.sns {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 19px;
+}
+
+
+/*=======fix=======*/
+#fix {
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    transform: translateX(800px);
+}

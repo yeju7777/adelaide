@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-Bold.eot);
+    src: url(../font/LTMuseum-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../font/LTMuseum-Bold.woff) format('woff'),
+        url(../font/LTMuseum-Bold.woff2) format('woff2'),
+        url(../font/LTMuseum-Bold.otf) format('otf'),
+        url(../font/LTMuseum-Bold.svg#LTMuseum-Bold) format('svg'),
+        url(../font/LTMuseum-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-light.eot);
+    src: url(../font/LTMuseum-light.eot?#iefix) format('embedded-opentype'),
+        url(../font/LTMuseum-light.woff) format('woff'),
+        url(../font/LTMuseum-light.woff2) format('woff2'),
+        url(../font/LTMuseum-light.otf) format('otf'),
+        url(../font/LTMuseum-light.svg#LTMuseum-Bold) format('svg'),
+        url(../font/LTMuseum-light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-Reg.ttf) format('otf'),
+        url(../font/LTMuseum-Reg.woff) format('woff'),
+        url(../font/LTMuseum-Reg.woff2) format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Edensor-Free';
+    src: url(./Edensor-Free.otf) format('otf'),
+        url(./Edensor-Free.woff) format('woff'),
+        url(./Edensor-Free.woff2) format('woff2');
+}
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/*
+font-family: 'NanumSquareLight';
+font-family: 'NanumSquare';
+font-family: 'NanumSquareBold';
+font-family: 'NanumSquareExtraBold';
+font-family: 'NanumSquareAcb';
+font-family: 'NanumSquareAceb';
+font-family: 'NanumSquareAcl';
+font-family: 'NanumSquareAcr';
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    min-width: 1450px;
+}
+
+/*=======header=======*/
+#header {
+    background-color: #fff;
+    opacity: 85%;
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.h_text {
+    display: flex;
+}
+
+.h_text li {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 0 45px;
+
+}
+
+.h_icon {
+    display: flex;
+
+}
+
+.h_icon li {
+    padding-left: 15px;
+}
+
+
+.h_icon li:nth-child(2) {
+    padding-left: 20px;
+}
+
+.h_text li:hover {
+    color: rgb(64, 147, 193);
+}
+
+.h_icon li:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+
+
+/*=======main_banner=======*/
+#main_banner h1 img {
+    width: 100%;
+}
+
+
+
+
+/*=======notice=======*/
+#notice {
+    background-color: rgb(20, 53, 72);
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#notice h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'LTMuseum';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+#notice_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.notice_box {
+    height: 55px;
+    background-color: rgb(228, 233, 238);
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid rgb(64, 147, 193);
+    border-bottom: 1px solid rgb(64, 147, 193);
+    align-items: center;
+    font-family: 'NanumSquareBold';
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.box_small a {
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid rgb(64, 147, 193);
+    align-items: center;
+    font-family: 'NanumSquareBold';
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+.number {
+    text-align: center;
+    width: 10%;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    width: 50%;
+    align-items: center;
+}
+
+.date {
+    text-align: center;
+    width: 20%;
+    align-items: center;
+}
+
+.human {
+    text-align: center;
+    width: 20%;
+    align-items: center;
+}
+
+.box_small :hover {
+    background-color: rgb(228, 233, 238);
+}
+
+.more{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.more a {
+    font-size: 15px;
+    background-color: rgb(205, 219, 233);
+    display: inline-block;
+    padding: 3px 30px;
+    margin-top: 70px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.more a:hover {
+    background-color: rgb(20, 53, 72);
+    color: #fff;
+}
+
+/*review*/
+#review {
+    background-color: rgb(20, 53, 72);
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#review h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'LTMuseum';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+#review_inner {
+    margin: 0 auto;
+    width: 1320px;
+    margin-bottom: 100px;
+}
+
+
+.review_icon {
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.photo {
+    display: flex;
+    border-left: 3px solid rgb(20, 53, 72);
+    border-right: 3px solid rgb(20, 53, 72);
+    width: 33.33%;
+    justify-content: space-evenly;
+}
+
+.photo h1 {
+    padding-top: 5px;
+}
+
+.photo p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.photo h2 a {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgb(20, 53, 72);
+    border-radius: 50%;
+    background-color: rgb(20, 53, 72);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.text {
+    width: 33.33%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.text p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.text h2 a {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgb(20, 53, 72);
+    border-radius: 50%;
+    background-color: rgb(20, 53, 72);
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.best {
+    display: flex;
+    width: 33.33%;
+    justify-content: space-evenly;
+}
+
+.best p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.best h2 a {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    border: 1px solid rgb(20, 53, 72);
+    background-color: rgb(20, 53, 72);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.text h2 a:hover {
+    border: 1px solid rgb(188, 210, 233);
+    background-color: rgb(188, 210, 233);
+}
+
+.best h2 a:hover {
+    border: 1px solid rgb(188, 210, 233);
+    background-color: rgb(188, 210, 233);
+}
+
+.photo h2 a:hover {
+    border: 1px solid rgb(188, 210, 233);
+    background-color: rgb(188, 210, 233);
+}
+
+.review_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    border: 2px solid rgb(20, 53, 72);
+}
+
+.best_photo h1 img {
+    width: 100%;
+}
+
+.best_text ul {
+    display: flex;
+}
+
+.best_text ul li {
+    padding-right: 20px;
+}
+
+.best_text h1 {
+    padding-top: 100px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.best_text h3 {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    font-family: 'NanumSquareBold';
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.best_text p {
+    padding-top: 30px;
+    font-family: 'NanumSquare';
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.best_photo h1 img {
+    width: 100%;
+}
+
+.best_text ul li img {
+    width: 100%;
+}
+
+
+
+/*=======footer=======*/
+#footer {
+    background-color: rgb(205, 219, 233);
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.sns p:nth-child(1) {
+    padding-bottom: 20px;
+}
+
+.f_text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+.sns {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 19px;
+}
+
+
+/*=======fix=======*/
+#fix {
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    transform: translateX(800px);
+}

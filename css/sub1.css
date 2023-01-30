@@ -1,0 +1,574 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-Bold.eot);
+    src: url(../font/LTMuseum-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../font/LTMuseum-Bold.woff) format('woff'),
+        url(../font/LTMuseum-Bold.woff2) format('woff2'),
+        url(../font/LTMuseum-Bold.otf) format('otf'),
+        url(../font/LTMuseum-Bold.svg#LTMuseum-Bold) format('svg'),
+        url(../font/LTMuseum-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-light.eot);
+    src: url(../font/LTMuseum-light.eot?#iefix) format('embedded-opentype'),
+        url(../font/LTMuseum-light.woff) format('woff'),
+        url(../font/LTMuseum-light.woff2) format('woff2'),
+        url(../font/LTMuseum-light.otf) format('otf'),
+        url(../font/LTMuseum-light.svg#LTMuseum-Bold) format('svg'),
+        url(../font/LTMuseum-light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'LTMuseum';
+    src: url(../font/LTMuseum-Reg.ttf) format('otf'),
+        url(../font/LTMuseum-Reg.woff) format('woff'),
+        url(../font/LTMuseum-Reg.woff2) format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Edensor-Free';
+    src: url(./Edensor-Free.otf) format('otf'),
+        url(./Edensor-Free.woff) format('woff'),
+        url(./Edensor-Free.woff2) format('woff2');
+}
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    min-width: 1450px;
+}
+
+/*=======header=======*/
+#header {
+    background-color: #fff;
+    opacity: 85%;
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.h_text {
+    display: flex;
+}
+
+.h_text li {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 0 45px;
+
+}
+
+.h_icon {
+    display: flex;
+
+}
+
+.h_icon li {
+    padding-left: 15px;
+}
+
+
+.h_icon li:nth-child(2) {
+    padding-left: 20px;
+}
+
+.h_text li:hover{
+    color: rgb(64, 147, 193);
+}
+
+.h_icon li:hover{
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+
+/*=======aboutus=======*/
+#aboutus{
+    overflow: hidden;
+}
+
+.aboutus_inner {
+    margin: 0 auto;
+    width: 1320px;
+    display: flex;
+    padding-top: 270px;
+    padding-bottom: 105px;
+    justify-content: space-between;
+}
+
+.aboutus_text {
+    padding-left: 20px;
+}
+
+.aboutus_text h3 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+    padding-bottom: 140px;
+    padding-top: 200px;
+}
+
+.aboutus_text h1 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 50px;
+}
+
+.aboutus_text p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+
+.aboutus_img {
+    padding-right: 50px;
+}
+
+.aboutus_img h1 img{
+    width: 100%;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .star1 {
+    animation: rotate 5s linear infinite;
+  }
+
+.aboutus_img{
+    position: relative;
+}
+
+.box1{
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    z-index: 10;
+}
+
+/*=======brand story=======*/
+.story_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.story_inner h1 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 150px;
+}
+
+.story_inner p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.story_inner h1,
+.story_inner p {
+    text-align: center;
+}
+
+#brandstory {
+    background-image: url(../images/about_back.png);
+    background-repeat: no-repeat;
+    background-position: 0 500px;
+    height: 2200px;
+}
+
+
+.function {
+    padding-left: 95px;
+    position: relative;
+}
+
+.story_text1 {
+    position: absolute;
+    right: 300px;
+    top: 100px;
+}
+
+.story_text1 h3 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.story_text1 p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 20px;
+}
+
+
+
+/*.trendy h2{
+    text-align: right;
+    padding-right: 95px;
+}
+*/
+
+.trendy {
+    position: relative;
+}
+
+.trendy h2 {
+    position: absolute;
+    right: 95px;
+    top: -100px;
+}
+
+.story_text2 h3 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.story_text2 p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.story_text2 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    text-align: right;
+}
+
+
+/*=======fabric=======*/
+#fabric {
+    padding-bottom: 190px;
+}
+
+#fabric h1 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.fabric_intro {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.water {
+    text-align: center;
+}
+
+.water p img {
+    width: 543px;
+    text-align: center;
+}
+
+.water h3 {
+    padding-bottom: 90px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.water h4 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    padding: 70px 0;
+    font-weight: normal;
+}
+
+.water p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 200;
+}
+
+.dry {
+    text-align: center;
+}
+
+.dry p img {
+    width: 543px;
+    text-align: center;
+}
+
+.dry h3 {
+    padding-bottom: 90px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: bold;
+    padding-bottom: 112px;
+}
+
+.dry h4 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    padding: 70px 0;
+    font-weight: normal;
+}
+
+.dry p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 200;
+}
+
+
+
+/*=======logo=======*/
+.logo_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.logo_inner h1 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.logo_inner p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.logo_intro {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main p {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 29px;
+    padding-left: 100px;
+}
+
+.main img {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.sub p {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 29px;
+    position: absolute;
+    top: 0;
+    right: 560px;
+}
+
+.sub img {
+    position: absolute;
+    top: 30px;
+    right: 200px;
+}
+
+
+/*=======color=======*/
+.color_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 170px;
+}
+
+.color_inner h1 {
+    font-family: 'LTMuseum';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 150px;
+}
+
+.color_inner p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.color_bar {
+    display: flex;
+}
+
+.blue_bar1 {
+    background-color: rgb(20, 53, 72);
+    width: 330px;
+    height: 80px;
+}
+
+.blue_bar1 p {
+    padding-top: 30px;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.blue_bar2 {
+    background-color: rgb(64, 147, 193);
+    width: 330px;
+    height: 80px;
+}
+
+.blue_bar2 p {
+    padding-top: 30px;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.blue_bar3 {
+    background-color: rgb(188, 210, 233);
+    width: 330px;
+    height: 80px;
+}
+
+.blue_bar3 p {
+    padding-top: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+.blue_bar4 {
+    background-color: rgb(228, 233, 238);
+    width: 330px;
+    height: 80px;
+}
+
+.blue_bar4 p {
+    padding-top: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+/*=======footer=======*/
+#footer {
+    background-color: rgb(205, 219, 233);
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.sns p:nth-child(1) {
+    padding-bottom: 20px;
+}
+
+.f_text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+.sns {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 19px;
+}
+
+
+/*=======fix=======*/
+#fix {
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    transform: translateX(800px);
+}

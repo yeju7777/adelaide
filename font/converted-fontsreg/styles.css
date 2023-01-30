@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'LTMuseum-Reg';
+  src: url(./LTMuseum-Reg.otf) format('otf'),
+       url(./LTMuseum-Reg.woff) format('woff'),
+       url(./LTMuseum-Reg.woff2) format('woff2');
+}

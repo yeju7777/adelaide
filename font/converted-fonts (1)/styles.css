@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'LTMuseum-Light';
+  src: url(./LTMuseum-Light.woff) format('woff'),
+       url(./LTMuseum-Light.woff2) format('woff2'),
+       url(./LTMuseum-Light.otf) format('otf');
+}
