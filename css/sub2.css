@@ -129,6 +129,17 @@ body {
     width: 100%;
 }
 
+#main_banner h1{
+    position: relative;
+}
+
+.banner_text h2{
+    position: absolute;
+    top: 350px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
 
 /*=======best========*/
 #best{

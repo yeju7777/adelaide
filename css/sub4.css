@@ -141,6 +141,17 @@ body {
     width: 100%;
 }
 
+#main_banner h1{
+    position: relative;
+}
+
+.banner_text{
+    position: absolute;
+    top: 330px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
 
 
 
